@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Card from './component/Card';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Card bundle="Free" price="Rp 0"/>
+    <Card bundle="Premium" price="Rp 100.000"/>
+    <Card bundle="Advanced" price="Rp 200.000"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
