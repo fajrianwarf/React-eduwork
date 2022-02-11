@@ -1,15 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
-import Card from './component/Card';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import Card from './component/Card';
+// import FormActionBootstrap from './component/FormActionBootstrap';
+import Header from './component/Header';
+import FormAction from './component/FormAction';
+
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card bundle="Free" price="Rp 0"/>
-    <Card bundle="Premium" price="Rp 100.000"/>
-    <Card bundle="Advanced" price="Rp 200.000"/>
+    <Header>
+      <FormAction />
+    </Header>
+
+      {/*<Card bundle="Free" price="Rp 0"/>
+      <Card bundle="Premium" price="Rp 100.000"/>
+      <Card bundle="Advanced" price="Rp 200.000"/>
+      <FormActionBootstrap /> */}
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
