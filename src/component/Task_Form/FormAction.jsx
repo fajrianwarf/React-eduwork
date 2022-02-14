@@ -1,6 +1,6 @@
 import useForm from "./useForm"
 import validateForm from "./validateForm"
-import '../form.css'
+import './form.css'
 
 export default function FormAction() {
     const { values, handleChange, handleSubmit, errors } = useForm(validateForm);

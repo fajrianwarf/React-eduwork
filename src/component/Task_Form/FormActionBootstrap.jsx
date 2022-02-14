@@ -1,3 +1,5 @@
+//note : Ini memakai react component saja, termasuk validasinya
+
 import React, { useState } from 'react';
 import { Col, Row, Form, InputGroup, Button } from "react-bootstrap";
 // import 'bootstrap/dist/css/bootstrap.min.css';
