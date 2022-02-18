@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = (props) => {
     return (
-        <div className='col'>
+        <div className='col col-lg-4'>
             <div className='card mb-4 rounded-3 shadow-sm'>
                 <div className='card-header py-3'>
                     <h4 className='my-0 fw-normal'>{props.bundle}</h4>
