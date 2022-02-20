@@ -11,7 +11,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <NavLink exact activeClassName='text-danger' className="nav-link" to="/">Home</NavLink>
+                            <NavLink className="nav-link" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/Task-1">Task 1</NavLink>
@@ -21,6 +21,9 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/Task-3">Task 3</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Task-4">Task 4</NavLink>
                         </li>
                     </ul>
                 </div>

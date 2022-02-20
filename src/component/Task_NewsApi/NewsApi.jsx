@@ -34,16 +34,16 @@ const Api = () => {
             </form>
             <div className="row">
                 {   
-                    news.map( (news) => {
+                    news.map( (news, index) => {
                         return (
-                            <div className='col col-lg-4'>
-                                <div key={news.url} className="card p-2 my-2">
-                                    <h4 className='card-title'>{news.title.substring(0, 50)} . . .</h4>
-                                    <img width='100%' height='200' alt='' src={news.urlToImage}></img>
+                            <div key={index} className='col col-lg-4'>
+                                <div className="card p-2 my-2">
+                                    <h4 className='card-title'>{news?.title.substring(0, 50)} . . .</h4>
+                                    <img width='100%' height='200' alt='' src={news?.urlToImage}></img>
                                     <p className='card-text'>{news?.description?.substring(0, 100)}</p>
                                     <p>{news?.content?.substring(0, 120)}</p>
-                                    <p>Published on : {new Date(news.publishedAt).toLocaleString()}</p>
-                                    <a href={news.url} className='btn btn-primary'>Read more</a>
+                                    <p>Published on : {new Date(news?.publishedAt).toLocaleString()}</p>
+                                    <a href={news?.url} className='btn btn-primary'>Read more</a>
                                 </div>
                             </div>
                         )
